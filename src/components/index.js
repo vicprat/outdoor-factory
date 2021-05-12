@@ -18,3 +18,4 @@ export * from './Search';
 export * from './CollabsGrid';
 export * from './HomeParallax';
 export * from './Footer';
+export * from './ContactForm';

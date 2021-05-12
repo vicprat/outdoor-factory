@@ -15,13 +15,13 @@ export function CartContents() {
 
   return (
     <section>
-      <h1>Your cart</h1>
+      <h1>Tu carrito</h1>
       {!!checkout?.lineItems && (
         <CartHeader>
-          <div>Product</div>
-          <div>Unit price</div>
-          <div>Quantity</div>
-          <div>Amount</div>
+          <div>Producto</div>
+          <div>Precio Unitario</div>
+          <div>Cantidad</div>
+          <div>Total</div>
         </CartHeader>
       )}
       {checkout?.lineItems?.map(item => (
@@ -32,11 +32,11 @@ export function CartContents() {
               {item.variant.title === 'Default Title' ? '' : item.variant.title}
             </div>
           </div>
-          <div>£{item.variant.price}</div>
+          <div>${item.variant.price}</div>
           <div>
             <QuantityAdjuster item={item} onAdjust={handleAdjustQuantity} />
           </div>
-          <div>£{(item.quantity * item.variant.price).toFixed(2)}</div>
+          <div>${(item.quantity * item.variant.price).toFixed(2)}</div>
           <div>
             <RemoveLineItem lineItemId={item.id} />
           </div>
@@ -48,14 +48,14 @@ export function CartContents() {
             <strong>Total:</strong>
           </div>
           <div>
-            <span>£{checkout?.totalPrice}</span>
+            <span>${checkout?.totalPrice}</span>
           </div>
         </CartFooter>
       )}
-      {!checkout?.lineItems && <h4>You cart is empty.</h4>}
+      {!checkout?.lineItems && <h4>Tu carrito está vacío.</h4>}
       <Footer>
         <div>
-          <Button onClick={() => navigate(-1)}>Continue shopping</Button>
+          <Button onClick={() => navigate(-1)}>Continuar comprando</Button>
         </div>
         <div>
           {!!checkout?.webUrl && (
@@ -64,7 +64,7 @@ export function CartContents() {
                 window.location.href = checkout.webUrl;
               }}
             >
-              Checkout
+              Pagar
             </Button>
           )}
         </div>

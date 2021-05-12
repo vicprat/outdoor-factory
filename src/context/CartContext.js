@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Client from 'shopify-buy';
 
 const client = Client.buildClient({
-  domain: `${process.env.GATSBY_SHOP_NAME}.myshopify.com`,
-  storefrontAccessToken: process.env.GATSBY_ACCESS_TOKEN,
+  domain: `outdoor-factory-mx.myshopify.com`,
+  storefrontAccessToken: '16a215758202e26d8306099cb548e6c1',
 });
 
 const defaultState = {

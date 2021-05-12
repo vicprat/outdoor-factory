@@ -6,10 +6,10 @@ import queryString from 'query-string';
 import { useLocation } from '@reach/router';
 
 const Content = styled.div`
-  display: grid;
+  display: block;
   grid-gap: 20px;
   margin-top: 20px;
-  grid-template-columns: 1fr 3fr;
+  
 `;
 
 export default function AllProducts() {
@@ -62,8 +62,8 @@ export default function AllProducts() {
   return (
     <Layout>
       <SEO
-        description="The MadHatter store all products"
-        title="All products"
+        description="Todos los productos"
+        title="Todos los productos"
       />
       {!!searchTerm && !!filteredProducts.length && (
         <h3>
@@ -76,18 +76,18 @@ export default function AllProducts() {
         {!filteredProducts.length && (
           <div>
             <h3>
-              <span>Oh no! Nothing matches</span>
+              <span>Oh no! Algo salió mal en tu busqueda</span>
               &nbsp;
               <strong>'{searchTerm}'</strong>
             </h3>
             <div>
-              To help with your search why not try:
+              Para una mejor respuesta te recomendamos:
               <br />
               <br />
               <ul>
-                <li>Checking your spelling</li>
-                <li>Using less words</li>
-                <li>Try using a different search term</li>
+                <li>Revisar si tu busqueda está bien escrita.</li>
+                <li>Usa palabras clave.</li>
+                <li>Trata de hacer una busqueda relacionada a lo que querías.</li>
               </ul>
             </div>
           </div>

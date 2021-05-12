@@ -6,9 +6,10 @@ export const ProductTileWrapper = styled.div`
          border-radius: 5px;
          overflow: hidden;
          flex-direction: column;
+         text-align: center;
          transition: 0.3s ease-in-out;
          &:hover {
-           opacity:  80%;
+           opacity: 70%;
          }
          > ${StyledLink} {
            font-family: 'Poppins', sans-serif;

@@ -27,6 +27,18 @@ export const Grid = styled.div`
              padding: 85% 25%;
              text-decoration: none;
              text-align: center;
+             @media (min-width: 375px) {
+               padding: 100% 25%;
+             }
+             @media (min-width: 425px) {
+               padding: 70% 25%;
+             }
+             @media (min-width: 768px) {
+               padding: 60% 30%;
+             }
+             @media (min-width: 1024px) {
+               padding: 50% 30%;
+             }
              h4 {
              }
              p {
@@ -35,10 +47,10 @@ export const Grid = styled.div`
                font-weight: lighter;
              }
              @media (min-width: 400px) {
-                  p {
-                    padding-top: 3rem;
-                  font-size: 1.5rem;
-                }
+               p {
+                 padding-top: 3rem;
+                 font-size: 1.5rem;
+               }
              }
            }
          }

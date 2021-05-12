@@ -14,12 +14,12 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO description="The MadHatter store homepage" title="Homepage" />
+      <SEO description="Outdoor Factory Mx" title="Inicio" />
       <HomeParallax />
       <CollabsGrid />
       {!!collections.find(
-        collection => collection.title === 'Featured Hats'
-      ) && <FeaturedProducts />}  
+        collection => collection.title === 'Selección del mes'
+      ) && <FeaturedProducts />}
     </Layout>
   );
 };

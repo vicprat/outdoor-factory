@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-  display: flex;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-items: center;
-  
-`;
+                       width: 100%;                       
+                       align-items: center;
+                       justify-content: space-around;
+                       padding: 0 20px 40px 20px;
+                       box-sizing: border-box;
+                       flex-wrap: wrap;
+                       z-index: 100;
+       `;

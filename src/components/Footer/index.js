@@ -28,7 +28,7 @@ export function Footer() {
               <Icon>
                 <FaWhatsapp />
               </Icon>
-              <StyledLink to="https://wa.me/4426217924">
+              <StyledLink to="https://wa.me/524421716830">
                 <h5>Whatsapp</h5>
               </StyledLink>
             </Contact>

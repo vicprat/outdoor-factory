@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `MadHatter Store`,
-    description: `We're mad about hats`,
+    title: `Outdoor Factory`,
+    description: `Somos una tienda de montaña con marcas 100% mexicanas`,
     author: `@tomphill`,
   },
   plugins: [
@@ -16,6 +16,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Oswald\:200`,
+          `Oswald\:300`,
+          `Oswald\:400`,
+          `Oswald\:700`,
+          `Poppins\:200`,
+          `Poppins\:300`,
+          `Poppins\:400`,
+          `Poppins\:700`,
           `open sans\:400`,
           'open sans:400i',
           `open sans\:700`,
@@ -28,8 +36,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-shopify',
       options: {
-        shopName: "outdoor-factory-mx",
-        accessToken: "16a215758202e26d8306099cb548e6c1",
+        shopName: 'outdoor-factory-mx',
+        accessToken: '16a215758202e26d8306099cb548e6c1',
         apiVersion: '2020-07',
       },
     },

@@ -7,7 +7,7 @@ export function HomepageCollectionsGrid({ collections }) {
     collection => collection.title === 'SALE'
   );
   const remainingCollections = collections?.filter(
-    collection => collection.title !== 'SALE'
+    collection => collection.title !== 'Selección del mes'
   );
 
   return (
