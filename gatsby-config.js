@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-shopify',
       options: {
-        shopName: process.env.GATSBY_SHOP_NAME,
-        accessToken: process.env.GATSBY_ACCESS_TOKEN,
+        shopName: "outdoor-factory-mx",
+        accessToken: "16a215758202e26d8306099cb548e6c1",
         apiVersion: '2020-07',
       },
     },

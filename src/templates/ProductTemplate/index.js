@@ -59,7 +59,7 @@ export default function ProductTemplate(props) {
         description={props.data.shopifyProduct.description}
         title={props.data.shopifyProduct.title}
       />
-      <Button onClick={() => navigate(-1)}>Back to products</Button>
+      <Button onClick={() => navigate(-1)}>Regresar</Button>
       <Grid>
         <div>
           <h1>{props.data.shopifyProduct.title}</h1>
@@ -83,7 +83,7 @@ export default function ProductTemplate(props) {
               )}
               {!!selectedVariant && (
                 <>
-                  <Price>£{selectedVariant.price}</Price>
+                  <Price>${selectedVariant.price}</Price>
                   <ProductQuantityAdder
                     available={selectedVariant.available}
                     variantId={selectedVariant.id}

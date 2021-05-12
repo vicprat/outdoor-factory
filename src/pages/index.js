@@ -4,8 +4,10 @@ import {
   SEO,
   HomepageCollectionsGrid,
   FeaturedProducts,
+  CollabsGrid, HomeParallax
 } from 'components';
 import ProductContext from 'context/ProductContext';
+
 
 const IndexPage = () => {
   const { collections } = React.useContext(ProductContext);
@@ -13,16 +15,11 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO description="The MadHatter store homepage" title="Homepage" />
-      <HomepageCollectionsGrid
-        collections={
-          collections.filter(
-            collection => collection.title !== 'Featured Hats'
-          ) || []
-        }
-      />
+      <HomeParallax />
+      <CollabsGrid />
       {!!collections.find(
         collection => collection.title === 'Featured Hats'
-      ) && <FeaturedProducts />}
+      ) && <FeaturedProducts />}  
     </Layout>
   );
 };
