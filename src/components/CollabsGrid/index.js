@@ -55,7 +55,11 @@ export function CollabsGrid() {
         </Link>
       </article>
       <article style={{ backgroundImage: `url(${Image5})` }}>
-        <Link aria-label="Monkey" to="all-products" className="link primary">
+        <Link
+          aria-label="Monkey"
+          to="all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2ODIxNjQ2NzYyOQ%3D%3D"
+          className="link primary"
+        >
           <header className="major">
             <p>¡Conoce el catálogo oficial!</p>
           </header>
