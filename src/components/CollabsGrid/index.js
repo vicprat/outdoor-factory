@@ -3,6 +3,7 @@ import Image1 from '../../images/colaboradores/1.png';
 import Image2 from '../../images/colaboradores/2.png';
 import Image3 from '../../images/colaboradores/3.png';
 import Image4 from '../../images/colaboradores/4.png';
+import Image5 from '../../images/colaboradores/5.png';
 import { Link } from 'gatsby';
 import { Grid } from './styles';
 
@@ -16,36 +17,47 @@ export function CollabsGrid() {
           className="link primary"
         >
           <header className="major">
-          <p>
-              ¡Conoce el catálogo oficial!
-            </p>
+            <p>¡Conoce el catálogo oficial!</p>
           </header>
         </Link>
       </article>
       <article style={{ backgroundImage: `url(${Image3})` }}>
-        <Link aria-label="Kontiki" to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzIxNjM4ODI2OQ%3D%3D" className="link primary">
+        <Link
+          aria-label="Kontiki"
+          to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzIxNjM4ODI2OQ%3D%3D"
+          className="link primary"
+        >
           <header className="major">
-            <p>
-              ¡Conoce el catálogo oficial!
-            </p>
+            <p>¡Conoce el catálogo oficial!</p>
           </header>
         </Link>
       </article>
       <article style={{ backgroundImage: `url(${Image4})` }}>
-        <Link aria-label="Selva" to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzI1MTg0MzI0NQ%3D%3D"className="link primary">
+        <Link
+          aria-label="Selva"
+          to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzI1MTg0MzI0NQ%3D%3D"
+          className="link primary"
+        >
           <header className="major">
-          <p>
-              ¡Conoce el catálogo oficial!
-            </p>
+            <p>¡Conoce el catálogo oficial!</p>
           </header>
         </Link>
       </article>
       <article style={{ backgroundImage: `url(${Image2})` }}>
-        <Link aria-label="Atma" to="all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzA1NDIxOTQzNw%3D%3D"className="link primary">
+        <Link
+          aria-label="Atma"
+          to="all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzA1NDIxOTQzNw%3D%3D"
+          className="link primary"
+        >
           <header className="major">
-          <p>
-              ¡Conoce el catálogo oficial!
-            </p>
+            <p>¡Conoce el catálogo oficial!</p>
+          </header>
+        </Link>
+      </article>
+      <article style={{ backgroundImage: `url(${Image5})` }}>
+        <Link aria-label="Monkey" to="all-products" className="link primary">
+          <header className="major">
+            <p>¡Conoce el catálogo oficial!</p>
           </header>
         </Link>
       </article>
