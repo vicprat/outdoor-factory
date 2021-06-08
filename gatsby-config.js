@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Outdoor Factory`,
     description: `Somos una tienda de montaña con marcas 100% mexicanas`,
-    author: `@tomphill`,
+    author: `@vic_prat`,
   },
   plugins: [
     `gatsby-plugin-remove-fingerprints`,
@@ -57,8 +57,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#3a3a3a`,
+        theme_color: `#3a3a3a`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
       },

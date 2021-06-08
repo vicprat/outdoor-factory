@@ -19,7 +19,7 @@ export function Footer() {
           <div className="col-md-3 col-12" id="p1">
             <Title>Nosotros</Title>
             <h6>Vívelo en la montaña</h6>
-            <p>Otdoor Factory </p>
+            <p>Outdoor Factory </p>
           </div>
 
           <div className=" col-md-3 col-12" id="p3">

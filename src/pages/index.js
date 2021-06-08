@@ -2,12 +2,12 @@ import React from 'react';
 import {
   Layout,
   SEO,
-  HomepageCollectionsGrid,
   FeaturedProducts,
-  CollabsGrid, HomeParallax
+  CollabsGrid,
+  HomeParallax,
+  AboutSection,
 } from 'components';
 import ProductContext from 'context/ProductContext';
-
 
 const IndexPage = () => {
   const { collections } = React.useContext(ProductContext);
@@ -16,6 +16,7 @@ const IndexPage = () => {
     <Layout>
       <SEO description="Outdoor Factory Mx" title="Inicio" />
       <HomeParallax />
+      <AboutSection />
       <CollabsGrid />
       {!!collections.find(
         collection => collection.title === 'Selección del mes'

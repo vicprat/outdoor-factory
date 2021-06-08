@@ -13,7 +13,7 @@ export function CollabsGrid() {
       <article style={{ backgroundImage: `url(${Image1})` }}>
         <Link
           aria-label="Ultra Climbing"
-          to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzA1NDMxNzc0MQ%3D%3D"
+          to="/ultra"
           className="link primary"
         >
           <header className="major">
@@ -24,7 +24,7 @@ export function CollabsGrid() {
       <article style={{ backgroundImage: `url(${Image3})` }}>
         <Link
           aria-label="Kontiki"
-          to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzIxNjM4ODI2OQ%3D%3D"
+          to="/kontiki"
           className="link primary"
         >
           <header className="major">
@@ -35,7 +35,7 @@ export function CollabsGrid() {
       <article style={{ backgroundImage: `url(${Image4})` }}>
         <Link
           aria-label="Selva"
-          to="/all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzI1MTg0MzI0NQ%3D%3D"
+          to="/selva-negra"
           className="link primary"
         >
           <header className="major">
@@ -45,8 +45,8 @@ export function CollabsGrid() {
       </article>
       <article style={{ backgroundImage: `url(${Image2})` }}>
         <Link
-          aria-label="Atma"
-          to="all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2NzA1NDIxOTQzNw%3D%3D"
+          aria-label="Atman"
+          to="atman"
           className="link primary"
         >
           <header className="major">
@@ -57,7 +57,7 @@ export function CollabsGrid() {
       <article style={{ backgroundImage: `url(${Image5})` }}>
         <Link
           aria-label="Monkey"
-          to="all-products?c=Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2ODIxNjQ2NzYyOQ%3D%3D"
+          to="monkey-hands"
           className="link primary"
         >
           <header className="major">
