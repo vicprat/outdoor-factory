@@ -1,5 +1,5 @@
 import React from 'react';
-import Collage from '../../images/logo.png';
+import Collage from '../../images/gatsby-icon.png';
 import { About, Description, Image, Hide } from './styles';
 
 export function AboutSection() {

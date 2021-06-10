@@ -11,7 +11,7 @@ export function AtmanProducts() {
 
   return (
     <section>
-      <h1>Todos Los Productos</h1>
+      <h1>Todos los Productos</h1>
       <ProductsGrid products={featuredCollection.products} />
     </section>
   );

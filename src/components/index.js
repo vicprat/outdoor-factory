@@ -24,4 +24,5 @@ export * from './KontikiProducts';
 export * from './MonkeyProducts';
 export * from './SelvaProducts';
 export * from './UltraProducts';
+export * from './RokeProducts';
 export * from './AboutSection';
