@@ -10,11 +10,7 @@ export function Footer() {
       <hr />
       <div className="container">
         <div className="row">
-          <div className="col-md-3 col-12">
-            <div className="box">
-              <Logo />
-            </div>
-          </div>
+          <div className="col-md-3 col-12"></div>
 
           <div className="col-md-3 col-12" id="p1">
             <Title>Nosotros</Title>

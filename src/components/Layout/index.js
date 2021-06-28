@@ -9,8 +9,9 @@ const Layout = ({ children }) => {
   return (
     <>
     <ParallaxProvider>
-      <Header />
+      
       <LayoutWrapper>
+      <Header />
         <main>{children}</main>
       </LayoutWrapper>
       </ParallaxProvider>

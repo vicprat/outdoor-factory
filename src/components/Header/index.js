@@ -1,30 +1,36 @@
 import { Search } from '../Search';
 import React from 'react';
-import { Nav, Navbar, Form} from 'react-bootstrap';
+import {Link} from "gatsby";
+//import { Nav, Navbar, Form} from 'react-bootstrap';
 import { Cart } from '../Cart';
-import { Logo } from '../Logo';
-import {HeaderWrapper} from "./styles"
+import {HeaderWrapper, Container, Logo, NavToggle, HamburgerMenu} from "./styles"
 
 
 export function Header() {
   return (
     <HeaderWrapper>
-      <Navbar bg="light" variant="light" expand="lg">
-        <Nav.Link href="/">
-          <Logo />
-        </Nav.Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="/">Inicio</Nav.Link>
-            <Nav.Link href="/contact">Contacto</Nav.Link>
-            <Search />
-          </Nav>
-        </Navbar.Collapse>
-        <Form inline>
-          <Cart />
-        </Form>
-      </Navbar>
+    <Container>
+      
+      <div className="row v-center space-between">
+      <NavToggle>
+          <HamburgerMenu>
+            <span></span>
+            <span></span>
+          </HamburgerMenu>
+        </NavToggle>
+        <Logo>
+          <Link to="/">
+            OUTDOOR <br></br>FACTORY
+          </Link>
+        </Logo>
+        
+        <Search />
+            <Cart />
+      </div>
+    </Container>
+    
+           
+       
     </HeaderWrapper>
   );
 }
