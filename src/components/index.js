@@ -26,3 +26,5 @@ export * from './SelvaProducts';
 export * from './UltraProducts';
 export * from './RokeProducts';
 export * from './AboutSection';
+export * from './Banner';
+export * from './Cases';

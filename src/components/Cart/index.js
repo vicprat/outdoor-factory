@@ -1,6 +1,6 @@
 import React from 'react';
 import { CartWrapper } from './styles';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingBag } from 'react-icons/fa';
 import CartContext from 'context/CartContext';
 
 export function Cart() {
@@ -13,7 +13,7 @@ export function Cart() {
   }
   return (
     <CartWrapper>
-      <FaShoppingCart size="1.5em" />
+      <FaShoppingBag size="1.5em" />
       <div>
         {totalQuantity} ${checkout?.totalPrice || '0.00'}
       </div>

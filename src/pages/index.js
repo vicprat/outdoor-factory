@@ -5,9 +5,12 @@ import {
   FeaturedProducts,
   CollabsGrid,
   HomeParallax,
+  Banner,
+  Cases,
   AboutSection,
 } from 'components';
 import ProductContext from 'context/ProductContext';
+
 
 const IndexPage = () => {
   const { collections } = React.useContext(ProductContext);
@@ -15,7 +18,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO description="Outdoor Factory Mx" title="Inicio" />
-      <HomeParallax />
+      <Banner />
+      <Cases />
+
       <AboutSection />
       <CollabsGrid />
       {!!collections.find(
