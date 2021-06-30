@@ -24,7 +24,7 @@ const caseStudies = [
 
 export function Cases() {
   return (
-    <CasesContainer>
+    <CasesContainer className="cases">
       <div className="container-fluid">
         <div className="row">
           {caseStudies.map(caseItem => (

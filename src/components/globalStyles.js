@@ -7,9 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     height: 40px;
     font-size: 16px;
   }
-  body{
+  body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
+    visibility: hidden;
   }
   strong{
     font-weight: bold;

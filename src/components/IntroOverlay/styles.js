@@ -1,49 +1,81 @@
 import styled from 'styled-components';
 
 export const OverlayIntro = styled.div`
-  .intro-overlay {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .top {
-      height: 50vh;
+        
+// intro overlay
+.intro-overlay {
+  .top {
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+    .overlay-top {
       position: absolute;
-      display: grid;
-      grid-template-columns: 1fr;
-      width: 100%;
-      z-index: 8;
-      @media (min-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr;
+      height: 100%;
+      width: 100vw;
+      background: black;
+      bottom: 0;
+      left: 0;
+      right: 0;
+       @media (min-width: 768px)  {
+        width: 33.33%;
       }
-      .overlay-top {
-        height: 50vh;
-        width: 100%;
-        background: black;
-        bottom: 0;
-        left: 0;
-        right: 0;
+      &:nth-child(2) {
+       
+        display: none;
+         @media (min-width: 768px)  {
+          left: 33.333%;
+          display: flex;
+        }
       }
-    }
-    .bottom {
-      height: 50vh;
-      position: absolute;
-      display: grid;
-      grid-template-columns: 1fr;
-      bottom: 0%;
-      width: 100%;
-      z-index: 8;
-      @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @media (min-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-      .overlay-bottom {
-        height: 50vh;
-        right: 0;
-        width: 100%;
-        background: black;
+      &:nth-child(3) {
+        
+        display: none;
+         @media (min-width: 768px)  {
+          left: 66.666%;
+          display: flex;
+        }
       }
     }
   }
-`;
+
+  .bottom {
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 8;
+    .overlay-bottom {
+      position: absolute;
+      height: 100%;
+      width: 33.333vw;
+      background: black;
+      bottom: 0;
+      right: 66.666%;
+      @include media("<=tablet") {
+        right: 0;
+        width: 100vw;
+      }
+      &:nth-child(2) {
+        right: 33.333%;
+        
+        @include media("<=tablet") {
+          width: 100vw;
+          top: 100%;
+          right: 0;
+        }
+      }
+      &:nth-child(3) {
+        right: 0;
+   
+        @include media("<=tablet") {
+          width: 100vw;
+          top: 200%;
+        }
+      }
+    }
+  }
+}
+
+
+       `;

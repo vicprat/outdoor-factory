@@ -4,7 +4,7 @@ import { MainContainer } from './styles';
 
 export function Banner() {
   return (
-    <MainContainer>
+    <MainContainer className="main">
       <div className="container">
         <div className="row">
           <h2>
