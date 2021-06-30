@@ -5,7 +5,6 @@ export const CasesContainer = styled.section`
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
     @media (min-width: 700px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -21,7 +20,7 @@ export const CasesContainer = styled.section`
       }
       .case-details {
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;

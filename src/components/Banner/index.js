@@ -1,11 +1,11 @@
 import React from 'react';
 import RightArrow from '../../images/arrow-right.svg';
-import { Main, Container } from './styles';
+import { MainContainer } from './styles';
 
 export function Banner() {
   return (
-    <Main>
-      <Container>
+    <MainContainer>
+      <div className="container">
         <div className="row">
           <h2>
             <div className="line">
@@ -21,7 +21,7 @@ export function Banner() {
             </a>
           </div>
         </div>
-      </Container>
-    </Main>
+      </div>
+    </MainContainer>
   );
 }

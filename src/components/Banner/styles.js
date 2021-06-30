@@ -1,14 +1,30 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
+export const MainContainer = styled.div`
   height: 50vh;
   background-color: white;
+  .container {
+    width: 100%;
+    height: 100%;
+    .row {
+      display: flex;
+      height: 100%;
+    }
+    .v-center {
+      align-items: center;
+    }
+    .space-between {
+      justify-content: space-between;
+    }
+  }
+
+  padding: 0 20px;
   .row {
     flex-direction: column;
     justify-content: center;
     h2 {
-      font-size: 1.2rem;
-      margin-top: 72px;
+      font-size: 1rem;
+      margin-top: 50px;
       line-height: 2.2rem;
       font-weight: 700;
       z-index: 10;
@@ -82,20 +98,5 @@ export const Main = styled.div`
         }
       }
     }
-  }
-`;
-
-export const Container = styled.div`
-  width: 80%;
-  height: 100%;
-  .row {
-    display: flex;
-    height: 100%;
-  }
-  .v-center {
-    align-items: center;
-  }
-  .space-between {
-    justify-content: space-between;
   }
 `;

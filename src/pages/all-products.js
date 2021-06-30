@@ -9,7 +9,6 @@ const Content = styled.div`
   display: block;
   grid-gap: 20px;
   margin-top: 20px;
-  
 `;
 
 export default function AllProducts() {
@@ -61,10 +60,7 @@ export default function AllProducts() {
     .filter(filterBySearchTerm);
   return (
     <Layout>
-      <SEO
-        description="Todos los productos"
-        title="Todos los productos"
-      />
+      <SEO description="Todos los productos" title="Todos los productos" />
       {!!searchTerm && !!filteredProducts.length && (
         <h3>
           Search term: <strong>'{searchTerm}'</strong>
@@ -87,7 +83,9 @@ export default function AllProducts() {
               <ul>
                 <li>Revisar si tu busqueda está bien escrita.</li>
                 <li>Usa palabras clave.</li>
-                <li>Trata de hacer una busqueda relacionada a lo que querías.</li>
+                <li>
+                  Trata de hacer una busqueda relacionada a lo que querías.
+                </li>
               </ul>
             </div>
           </div>

@@ -4,29 +4,34 @@ import {
   SEO,
   FeaturedProducts,
   CollabsGrid,
-  HomeParallax,
+  IntroOverlay,
   Banner,
   Cases,
   AboutSection,
 } from 'components';
 import ProductContext from 'context/ProductContext';
-
+import gsap from 'gsap';
 
 const IndexPage = () => {
   const { collections } = React.useContext(ProductContext);
 
-  return (
-    <Layout>
-      <SEO description="Outdoor Factory Mx" title="Inicio" />
-      <Banner />
-      <Cases />
+  //Timeline
+  const tl = gsap.timeline();
 
-      <AboutSection />
-      <CollabsGrid />
-      {!!collections.find(
-        collection => collection.title === 'Selección del mes'
-      ) && <FeaturedProducts />}
-    </Layout>
+  return (
+    <>
+      <IntroOverlay />
+      <Layout>
+        <SEO description="Outdoor Factory Mx" title="Inicio" />
+        <Banner />
+        <Cases />
+        <AboutSection />
+        <CollabsGrid />
+        {!!collections.find(
+          collection => collection.title === 'Selección del mes'
+        ) && <FeaturedProducts />}
+      </Layout>
+    </>
   );
 };
 

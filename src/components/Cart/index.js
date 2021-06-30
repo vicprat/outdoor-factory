@@ -13,7 +13,7 @@ export function Cart() {
   }
   return (
     <CartWrapper>
-      <FaShoppingBag size="1.5em" />
+      <FaShoppingBag size="1.2em" />
       <div>
         {totalQuantity} ${checkout?.totalPrice || '0.00'}
       </div>

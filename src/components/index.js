@@ -28,3 +28,4 @@ export * from './RokeProducts';
 export * from './AboutSection';
 export * from './Banner';
 export * from './Cases';
+export * from './IntroOverlay';
