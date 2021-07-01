@@ -48,29 +48,30 @@ export const OverlayIntro = styled.div`
     .overlay-bottom {
       position: absolute;
       height: 100%;
-      width: 33.333vw;
+      width: 100vw;
       background: black;
       bottom: 0;
-      right: 66.666%;
-      @include media("<=tablet") {
-        right: 0;
-        width: 100vw;
+    
+      @media (min-width: 768px) {
+        right: 66.666%;
+        width:33.333vW;
       }
       &:nth-child(2) {
-        right: 33.333%;
+        top: 100%;
         
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 100%;
-          right: 0;
+        @media (min-width: 768px) {
+          right: 33.333%;
+          width:33.333vW;
+          top: 0;
         }
       }
       &:nth-child(3) {
-        right: 0;
-   
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 200%;
+        top: 200%;
+        @media (min-width: 768px) {
+          width:33.333vW;
+          top: 0;
+          right: 0;
+         
         }
       }
     }
