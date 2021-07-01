@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-  position: fixed;
-  padding: 20px 40px;
-  width: 100%;
-  height: 95px;
-  z-index: 4;
-  background: white;
-  align-items: center;
-  justify-content: center;
-`;
+         position: fixed;
+         padding: 20px;
+         width: 100%;
+         height: 95px;
+         z-index: 4;
+         background: white;
+         align-items: center;
+         justify-content: center;
+       `;
 
 export const Container = styled.div`
   width: 100%;

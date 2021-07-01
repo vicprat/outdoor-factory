@@ -1,6 +1,7 @@
 import React, {useEffect}from 'react';
 import { LayoutWrapper } from './styles';
 import { Header } from '../Header';
+import { Navigation } from '../Navigation';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Footer } from '../Footer';
@@ -16,7 +17,9 @@ const Layout = ({ children }) => {
     <>
       <ParallaxProvider>
         <LayoutWrapper>
+       
           <Header />
+          <Navigation />
           <main>{children}</main>
         </LayoutWrapper>
       </ParallaxProvider>

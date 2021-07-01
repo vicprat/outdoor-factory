@@ -7,7 +7,8 @@ export const GlobalStyle = createGlobalStyle`
     height: 40px;
     font-size: 16px;
   }
-  body {
+  
+  body, html {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     visibility: hidden;
@@ -41,5 +42,10 @@ export const GlobalStyle = createGlobalStyle`
     >li{
       list-style: disc;
     }
+  }
+  .App{
+     z-index: 2;
+  transform: translateY(0);
+  position: relative;
   }
 `;
