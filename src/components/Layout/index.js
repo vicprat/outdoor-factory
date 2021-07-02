@@ -1,4 +1,4 @@
-import React, {useEffect}from 'react';
+import React, { useEffect } from 'react';
 import { LayoutWrapper } from './styles';
 import { Header } from '../Header';
 import { Navigation } from '../Navigation';
@@ -8,18 +8,20 @@ import { Footer } from '../Footer';
 import gsap from 'gsap';
 
 const Layout = ({ children }) => {
-  useEffect(() =>{
+  useEffect(() => {
     //Prevent flash from happening.
-    gsap.to("body", 0, {css:{visibility:"visible"}});
+    gsap.to('body', 0, { css: { visibility: 'visible' } });
   });
 
   return (
     <>
       <ParallaxProvider>
-        <LayoutWrapper>
-       
-          <Header />
-          <Navigation />
+      <Header />
+      <Navigation />
+     
+        <LayoutWrapper >
+        
+         
           <main>{children}</main>
         </LayoutWrapper>
       </ParallaxProvider>

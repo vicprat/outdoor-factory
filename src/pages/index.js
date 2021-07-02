@@ -1,4 +1,4 @@
-import React, {useEffect, useState}from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Layout,
   SEO,
@@ -12,43 +12,42 @@ import {
 import ProductContext from 'context/ProductContext';
 import gsap from 'gsap';
 
-
 let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
-  tl.from(".line span", 1.8, {
+  tl.from('.line span', 1.8, {
     y: 100,
-    ease: "power4.out",
+    ease: 'power4.out',
     delay: 1,
     skewY: 7,
     stagger: {
-      amount: 0.3
-    }
+      amount: 0.3,
+    },
   })
-    .to(".overlay-top", 1.6, {
+    .to('.overlay-top', 1.6, {
       height: 0,
-      ease: "expo.inOut",
-      stagger: 0.4
+      ease: 'expo.inOut',
+      stagger: 0.4,
     })
-    .to(".overlay-bottom", 1.6, {
+    .to('.overlay-bottom', 1.6, {
       width: 0,
-      ease: "expo.inOut",
+      ease: 'expo.inOut',
       delay: -0.8,
       stagger: {
-        amount: 0.4
-      }
+        amount: 0.4,
+      },
     })
-    .to(".intro-overlay", 0, {
-      css: { display: "none" }
+    .to('.intro-overlay', 0, {
+      css: { display: 'none' },
     })
-    .from(".case-image img", 1.6, {
+    .from('.case-image img', 1.6, {
       scale: 1.4,
-      ease: "expo.inOut",
+      ease: 'expo.inOut',
       delay: -2,
       stagger: {
-        amount: 0.4
+        amount: 0.4,
       },
-      onComplete: completeAnimation
+      onComplete: completeAnimation,
     });
 };
 
@@ -67,7 +66,7 @@ const IndexPage = () => {
 
   return (
     <>
-      {animationComplete === false ? <IntroOverlay /> : ""}
+      {animationComplete === false ? <IntroOverlay /> : ''}
       <Layout>
         <SEO description="Outdoor Factory Mx" title="Inicio" />
         <Banner />

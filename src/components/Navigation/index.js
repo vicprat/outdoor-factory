@@ -15,12 +15,12 @@ export function Navigation() {
                 <Search />
               </li>
               <li>
-                <Link to="/case-studies" exact>
+                <Link to="/" exact>
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link to="/approach" exact>
+                <Link to="/all-products" exact>
                   Tienda
                 </Link>
               </li>

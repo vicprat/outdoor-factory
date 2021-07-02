@@ -1,36 +1,55 @@
-import { Search } from '../Search';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-//import { Nav, Navbar, Form} from 'react-bootstrap';
 import { Cart } from '../Cart';
-import {
-  HeaderWrapper,
-  Container,
-  Logo,
-  NavToggle,
-  HamburgerMenu,
-} from './styles';
+import { HeaderWrapper } from './styles';
+import  UpArrow from '../../images/up-arrow-circle.svg';
+import { openMenu, closeMenu } from "../../animations/menuAnimations";
+
 
 export function Header() {
+  const [menuState, setMenuState] = useState({ menuOpened: false });
+  useEffect(() => {
+    
+   
+    if (menuState.menuOpened === true) {
+      openMenu();
+    } else if (menuState.menuOpened === false) {
+      closeMenu();
+    }
+  });
+ 
   return (
-    <HeaderWrapper>
-      <Container>
+    <HeaderWrapper className="header">
+      <div className="container">
         <div className="row v-center space-between">
-          <NavToggle>
-            <HamburgerMenu>
-              <span></span>
-              <span></span>
-            </HamburgerMenu>
-          </NavToggle>
-          <Logo>
-            <Link to="/">
-              OUTDOOR <br></br>FACTORY
+          <div className="nav-toggle">
+            <div
+              onClick={() => setMenuState({ menuOpened: true })}
+              className="hamburger-menu"
+            >
+              <span>
+                
+              </span>
+              <span>
+                
+              </span>
+            </div>
+            <div
+              className="hamburger-menu-close"
+              onClick={() => setMenuState({ menuOpened: false })}
+            >
+             <img src={UpArrow} alt="" />
+            </div>
+          </div>
+          <div className="logo">
+            <Link to="/" exact>
+              OUTDOOR FACTORY
             </Link>
-          </Logo>
+          </div>
 
           <Cart />
         </div>
-      </Container>
+      </div>
     </HeaderWrapper>
   );
 }
