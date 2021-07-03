@@ -6,14 +6,7 @@ export const NavigationContainer = styled.nav`
            min-width: 100%;
            margin: 0;
            height: 100;
-           @include media('<=1560px') {
-             width: 1280px;
-             min-width: 1280px;
-           }
-           @include media('<=desktop') {
-             width: 1080px;
-             min-width: 1080px;
-           }
+
            @include media('<=1080px') {
              width: 100%;
              min-width: 100%;
@@ -30,11 +23,10 @@ export const NavigationContainer = styled.nav`
                background: white;
                transform: translateY(-100);
                position: relative;
-               
+
                @media (min-width: 768px) {
                  height: 85vh;
                }
-               
 
                a {
                  position: relative;
