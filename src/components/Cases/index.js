@@ -8,21 +8,21 @@ const caseStudies = [
     subtitle: 'Puntos de venta',
     title: 'Descubre tus puntos más cercanos',
     img: 'nosotros',
-    path: "/ventas"
+    path: '/ventas',
   },
   {
     id: 2,
     subtitle: 'Todos los productos',
     title: '¡Checa el catálogo completo!',
     img: 'productos',
-    path: "/all-products"
+    path: '/all-products',
   },
   {
     id: 3,
     subtitle: 'Experiencias Outdoor',
     title: 'Atrevete a la aventura',
     img: 'experiencias',
-    path: "experiencias",
+    path: 'experiencias',
   },
 ];
 
@@ -33,18 +33,18 @@ export function Cases() {
         <div className="row">
           {caseStudies.map(caseItem => (
             <StyledLink to={caseItem.path}>
-            <div className="case" key={caseItem.id}>
-              <div className="case-details">
-                <span>{caseItem.subtitle}</span>
-                <h2>{caseItem.title}</h2>
+              <div className="case" key={caseItem.id}>
+                <div className="case-details">
+                  <span>{caseItem.subtitle}</span>
+                  <h2>{caseItem.title}</h2>
+                </div>
+                <div className="case-image">
+                  <img
+                    src={require(`..../../images/cases/${caseItem.img}.png`)}
+                    alt={caseItem.title}
+                  />
+                </div>
               </div>
-              <div className="case-image">
-                <img
-                  src={require(`..../../images/cases/${caseItem.img}.png`)}
-                  alt={caseItem.title}
-                />
-              </div>
-            </div>
             </StyledLink>
           ))}
         </div>

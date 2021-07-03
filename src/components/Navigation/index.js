@@ -49,12 +49,22 @@ export function Navigation() {
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">¡Siguenos!</li>
-                <li><Link to="https://www.instagram.com/outdoor_factory_of/?hl=es-la">Instagram</Link></li>
-                <li><Link to="https://www.facebook.com/Outdoor-Factory-106060428199885">Facebook</Link></li>
+                <li>
+                  <Link to="https://www.instagram.com/outdoor_factory_of/?hl=es-la">
+                    Instagram
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://www.facebook.com/Outdoor-Factory-106060428199885">
+                    Facebook
+                  </Link>
+                </li>
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Atención a clientes</li>
-                <li><Link to="https://wa.me/524421716830" >Whatsapp</Link></li>
+                <li>
+                  <Link to="https://wa.me/524421716830">Whatssapp</Link>
+                </li>
               </ul>
             </div>
           </div>

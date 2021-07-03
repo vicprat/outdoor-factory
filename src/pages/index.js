@@ -11,7 +11,6 @@ import {
 import ProductContext from 'context/ProductContext';
 import gsap from 'gsap';
 
-
 let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
@@ -82,4 +81,3 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-

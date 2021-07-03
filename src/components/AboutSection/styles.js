@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const About = styled.div`
-         display: grid;
-         height: 90vh;
-         padding: 3rem 1rem;
-         align-items: center;
-         justify-content: center;
-         text-align: center;
-         grid-template-columns: 1fr;
-         @media (min-width: 500px) {
-           grid-template-columns: 1fr 1fr;
-         }
-       `;
+  display: grid;
+  height: 90vh;
+  padding: 3rem 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  @media (min-width: 500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 export const Description = styled.div`
   flex: 1;
   padding: 0 0.5rem;

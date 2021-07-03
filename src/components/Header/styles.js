@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-  position: relative;
+  position: fixed;
   width: 100%;
-  top: 10%;
+  top: 0;
   z-index: 4;
-  padding: 0 40px;
+  padding: 10px 40px;
   background: white;
   
 
@@ -76,4 +76,3 @@ export const HeaderWrapper = styled.div`
   
 
        `;
-
