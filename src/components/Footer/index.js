@@ -1,5 +1,4 @@
 import React from 'react';
-import { Logo } from '../Logo';
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { FooterWrapper, Title, Icon, Contact } from './styles';
 import { StyledLink } from '../StyledLink';

@@ -49,12 +49,12 @@ export function Navigation() {
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">¡Siguenos!</li>
-                <li>Instagram</li>
-                <li>Facebook</li>
+                <li><Link to="https://www.instagram.com/outdoor_factory_of/?hl=es-la">Instagram</Link></li>
+                <li><Link to="https://www.facebook.com/Outdoor-Factory-106060428199885">Facebook</Link></li>
               </ul>
               <ul className="nav-info">
                 <li className="nav-info-label">Atención a clientes</li>
-                <li>+41 (0) 79 510 28 70</li>
+                <li><Link to="https://wa.me/524421716830" >Whatsapp</Link></li>
               </ul>
             </div>
           </div>

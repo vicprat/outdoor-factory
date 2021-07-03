@@ -6,8 +6,8 @@ import {MainWrapper} from "./styles";
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const imageDetails = {
-  width: "40vh",
-  height: "55vh",
+  width: '40vh',
+  height: '60vh',
 };
 
   const brandsInfo = [

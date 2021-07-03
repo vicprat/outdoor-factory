@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
-  position: fixed;
+  position: relative;
   width: 100%;
-  top: 0;
+  top: 10%;
   z-index: 4;
   padding: 0 40px;
   background: white;
   
 
   .row {
-    padding: 40px 0;
+    padding: 0 40px;
     align-items: center;
   justify-content: center;
   

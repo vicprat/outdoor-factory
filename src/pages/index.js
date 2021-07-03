@@ -11,6 +11,7 @@ import {
 import ProductContext from 'context/ProductContext';
 import gsap from 'gsap';
 
+
 let tl = gsap.timeline();
 
 const homeAnimation = completeAnimation => {
@@ -70,7 +71,7 @@ const IndexPage = () => {
         <SEO description="Outdoor Factory Mx" title="Inicio" />
         <Banner />
         <Cases />
-        
+
         {!!collections.find(
           collection => collection.title === 'Selección del mes'
         ) && <FeaturedProducts />}
@@ -81,3 +82,4 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
