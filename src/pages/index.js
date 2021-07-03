@@ -7,7 +7,6 @@ import {
   IntroOverlay,
   Banner,
   Cases,
-  AboutSection,
 } from 'components';
 import ProductContext from 'context/ProductContext';
 import gsap from 'gsap';
@@ -71,11 +70,11 @@ const IndexPage = () => {
         <SEO description="Outdoor Factory Mx" title="Inicio" />
         <Banner />
         <Cases />
-        <AboutSection />
-        <CollabsGrid />
+        
         {!!collections.find(
           collection => collection.title === 'Selección del mes'
         ) && <FeaturedProducts />}
+        <CollabsGrid />
       </Layout>
     </>
   );

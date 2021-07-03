@@ -1,57 +1,56 @@
 import styled from 'styled-components';
 
-export const Grid = styled.div`
+export const MainWrapper = styled.main`
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 2rem 0;
-  gap: 1rem;
-  width: 100%;
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  @media (min-width: 768px){
+    grid-template-columns: 1fr 1fr;
   }
-  article {
-    position: relative;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
-    height: 60vh;
-    min-height: 0;
-    max-height: none;
-    .major {
-      display: block;
-      color: white;
-      flex-grow: 1;
+  @media (min-width: 1000px){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+                                            .container {
+                                              position: relative;
+                                              .center {
       justify-content: center;
-      align-items: center;
-      position: absolute;
-      padding: 85% 25%;
-      text-decoration: none;
-      text-align: center;
-      @media (min-width: 375px) {
-        padding: 100% 25%;
-      }
-      @media (min-width: 425px) {
-        padding: 70% 25%;
-      }
-      @media (min-width: 768px) {
-        padding: 60% 30%;
-      }
-      @media (min-width: 1024px) {
-        padding: 50% 30%;
-      }
-      h4 {
-      }
-      p {
-        font-size: 1.2rem;
-        padding: auto;
-        font-weight: lighter;
-      }
-      @media (min-width: 400px) {
-        p {
-          padding-top: 3rem;
-          font-size: 1.5rem;
-        }
-      }
     }
-  }
-`;
+                                              .row {
+                                                height: 70vh;
+                                                align-items: center;
+                                                .image-container {
+                                                  position: relative;
+                                                
+                                                  .thumbnail {
+                                                    overflow: hidden;
+                                                    position: relative;
+                                                    .frame {
+                                                      img {
+                                                        width: 100%;
+                                                      }
+                                                    }
+                                                  }
+                                                  .information {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    display: grid;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    margin-top: 0;
+                                                    text-transform: uppercase;
+                                                    .title{
+                                                      font-weight: 700;
+                                                      font-size: 1.5rem;
+                                                    }
+                                                    .location {
+                                                      span {
+                                                        font-size: 1rem;
+                                                        margin: 10px auto;
+                                                        
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          `;

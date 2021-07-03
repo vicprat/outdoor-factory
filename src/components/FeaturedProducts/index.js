@@ -11,7 +11,7 @@ export function FeaturedProducts() {
 
   return (
     <section>
-      <h1>Selección del mes</h1>
+      <h1>Productos Destacados</h1>
       <ProductsGrid products={featuredCollection.products} />
     </section>
   );

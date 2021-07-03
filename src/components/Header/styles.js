@@ -3,16 +3,17 @@ import styled from 'styled-components';
 export const HeaderWrapper = styled.div`
   position: fixed;
   width: 100%;
-  height: 96px;
+  top: 0;
   z-index: 4;
   padding: 0 40px;
-  @media (min-width: 600px) {
-    height: 128px;
-  }
-  width: 100%;
-  height: 100%;
+  background: white;
+  
 
   .row {
+    padding: 40px 0;
+    align-items: center;
+  justify-content: center;
+  
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 1fr 2fr;

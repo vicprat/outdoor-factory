@@ -16,12 +16,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <ParallaxProvider>
-      <Header />
-      <Navigation />
-     
-        <LayoutWrapper >
-        
-         
+        <Header />
+        <Navigation />
+
+        <LayoutWrapper>
           <main>{children}</main>
         </LayoutWrapper>
       </ParallaxProvider>

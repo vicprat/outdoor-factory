@@ -25,13 +25,13 @@ export function Navigation() {
                 </Link>
               </li>
               <li>
-                <Link to="/services" exact>
+                <Link to="/nosotros" exact>
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" exact>
-                  Servicios
+                <Link to="/experiencias" exact>
+                  Experiencias
                 </Link>
               </li>
             </ul>

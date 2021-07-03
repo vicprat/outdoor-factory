@@ -1,58 +1,76 @@
-import React from 'react';
-import Image1 from '../../images/colaboradores/1.png';
-import Image2 from '../../images/colaboradores/2.png';
-import Image3 from '../../images/colaboradores/3.png';
-import Image4 from '../../images/colaboradores/4.png';
-import Image5 from '../../images/colaboradores/5.png';
-import Image6 from '../../images/colaboradores/6.png';
-import { Link } from 'gatsby';
-import { Grid } from './styles';
+import React from "react";
+import { Link } from "gatsby";
+import { motion, AnimatePresence } from "framer-motion";
+import ProgressiveImage from "react-progressive-image";
+import {MainWrapper} from "./styles";
 
-export function CollabsGrid() {
-  return (
-    <Grid>
-      <article style={{ backgroundImage: `url(${Image1})` }}>
-        <Link aria-label="Ultra Climbing" to="/ultra" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-      <article style={{ backgroundImage: `url(${Image3})` }}>
-        <Link aria-label="Kontiki" to="/kontiki" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-      <article style={{ backgroundImage: `url(${Image6})` }}>
-        <Link aria-label="Roke" to="/roke" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-      <article style={{ backgroundImage: `url(${Image4})` }}>
-        <Link aria-label="Selva" to="/selva-negra" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-      <article style={{ backgroundImage: `url(${Image2})` }}>
-        <Link aria-label="Atman" to="atman" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-      <article style={{ backgroundImage: `url(${Image5})` }}>
-        <Link aria-label="Monkey" to="monkey-hands" className="link primary">
-          <header className="major">
-            <p>¡Conoce el catálogo oficial!</p>
-          </header>
-        </Link>
-      </article>
-    </Grid>
-  );
-}
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
+const imageDetails = {
+  width: "40vh",
+  height: "55vh",
+};
+
+  const brandsInfo = [
+    {id: 1, name: "Selva Negra", path: "/selva-negra", img: "selva", location: "MTY" },
+    {id: 2, name: "Ultra Climbing", path: "/ultra", img: "ultra", location: "CDMX"},
+    {id: 3, name: "Atman Adventure Wear", path: "/atman", img: "atman", location: "CDMX" },
+    {id: 4, name: "Roke", path: "/roke", img: "roke", location:"QRO"},
+    {id: 5, name: "Kontiki", path: "/kontiki", img: "kontiki", location:"CDMX" },
+    {id: 6, name: "Monkey Hands", path: "/monkey-hands", img: "monkey", location:"CDMX"},
+  ]
+
+
+export function CollabsGrid  (){ return (
+  <AnimatePresence>
+    <MainWrapper>
+     
+          {brandsInfo.map(brandInfo => (
+             <div className="container"  key={brandInfo.id}> 
+             <div className="row center">
+            <div className="image-container">
+            <div
+              className="thumbnail"
+             
+              style={{
+                width: imageDetails.width,
+                height: imageDetails.height,
+              }}
+            >
+              <div className="frame">
+                <Link to={brandInfo.path}>
+                  <ProgressiveImage
+                    src={require(`../../images/colaboradores/${brandInfo.img}.png`)}
+                    
+                  >
+                    {(src) => (
+                      <motion.img
+                        src={src}
+                        alt="Selva Negra"
+                        whileHover={{ scale: 1.1 }}
+                        transition={transition}
+                      />
+                    )}
+                  </ProgressiveImage>
+                </Link>
+              </div>
+            </div>
+            <motion.div
+              exit={{ opacity: 0 }}
+              transition={transition}
+              className="information"
+            >
+              <div className="title">{brandInfo.name}</div>
+              <div className="location">
+                <span>{brandInfo.location}</span>
+              </div>
+            </motion.div>
+          </div>
+          </div>
+      </div>
+          ))}
+      
+    </MainWrapper>
+  </AnimatePresence>
+)};
+
+

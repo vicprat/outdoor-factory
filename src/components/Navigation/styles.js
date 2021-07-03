@@ -25,14 +25,16 @@ export const NavigationContainer = styled.nav`
                height: 100vh;
                z-index: 1;
                display: none;
-               position: fixed;
+               position: relative;
                overflow: hidden;
-               background: lightgray;
-               z-index: 2;
+               background: white;
+               transform: translateY(-100);
+               position: relative;
+               
                @media (min-width: 768px) {
                  height: 85vh;
-               }                                                                             transform: translateY(0);
-                                                                                             position: relative;
+               }
+               
 
                a {
                  position: relative;
