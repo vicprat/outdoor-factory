@@ -25,7 +25,7 @@ export function Navigation() {
                 </Link>
               </li>
               <li>
-                <Link to="/nosotros" exact>
+                <Link to="/about-us" exact>
                   Nosotros
                 </Link>
               </li>

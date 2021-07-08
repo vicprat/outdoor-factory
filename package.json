@@ -35,6 +35,7 @@
     "react-gsap": "^3.2.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
+    "react-multi-carousel": "^2.6.3",
     "react-progressive-image": "^0.6.0",
     "react-scroll-parallax": "^2.4.0",
     "shopify-buy": "^2.11.0",

@@ -30,3 +30,7 @@ export * from './Banner';
 export * from './Cases';
 export * from './IntroOverlay';
 export * from './Navigation';
+export * from './PuntosVenta';
+export * from './PuntosVenta';
+export * from './HomeCarousel';
+export * from './Elevarte';
