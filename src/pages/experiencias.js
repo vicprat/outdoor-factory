@@ -13,9 +13,7 @@ const IndexPage = () => {
       />
       <Elevarte />
       {!!collections.find(
-        collection =>
-          collection.title ===
-          'Experiencias Outdoor FactoryExperiencias Outdoor Factory'
+        collection => collection.title === 'Experiencias Outdoor Factory'
       ) && <ExperienciasProducts />}
     </Layout>
   );

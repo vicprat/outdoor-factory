@@ -22,7 +22,7 @@ const carouselsInfo = [
   {
     id: 4,
     img: 4,
-    path: '/products/lacandona-1',
+    path: '/products/rompevientos-nepal-hombre',
     description: 'Rompevientos Nepal Hombre',
   },
 ];
