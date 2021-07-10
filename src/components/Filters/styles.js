@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
 export const FiltersWrapper = styled.div`
-  padding: 10px;
-`;
+         margin: auto;
+         display: grid;
+         @media (min-width: 768px) {
+           display: flex;
+         }
+       `;

@@ -72,7 +72,7 @@ export function CollabsGrid() {
                         {src => (
                           <motion.img
                             src={src}
-                            alt="Selva Negra"
+                            alt={brandInfo.name}
                             whileHover={{ scale: 1.1 }}
                             transition={transition}
                           />

@@ -2,10 +2,13 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import { Link } from 'gatsby';
 import 'react-multi-carousel/lib/styles.css';
+import ProgressiveImage from 'react-progressive-image';
+import { motion } from 'framer-motion';
 
 import { MainWrapper } from './styles';
 import { Banner } from '../../images/elevarte/elevarte1.png';
 
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const carouselsInfo = [
   { id: 1, img: 1, description: 'elevarte' },
   {
@@ -43,7 +46,32 @@ export function Elevarte() {
   return (
     <MainWrapper>
       <div className="img-container">
-        <img src={require(`../../images/elevarte/main.png`)} alt="" />
+        <ProgressiveImage src={require(`../../images/elevarte/main.png`)}>
+          {src => (
+            <motion.img
+              src={src}
+              alt="elevate"
+              whileHover={{ scale: 1.005 }}
+              transition={transition}
+            />
+          )}
+        </ProgressiveImage>
+      </div>
+      <div className="info">
+        <div className="title">
+          <h1>ELEVARTE</h1>
+          <h2>Los expertos alguna vez fueron principiantes</h2>
+          <p>Sábado 13 de Noviembre: Competencia femenina.</p>
+          <p>Domingo 14 de Noviembre: Competencai masculina.</p>
+        </div>
+        <div className="description">
+          <p>
+            El objetivo de ésta competencia es pasar un momento increíble entre
+            amigos y escalar al máximo, para apoyar el desarrollo de la
+            comunidad de San José Tepuzas, una zona de escalada tan diversa en
+            sus estilos de escalada y con rutas para todos.
+          </p>
+        </div>
       </div>
       <Carousel
         infinite={true}

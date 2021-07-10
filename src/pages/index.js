@@ -69,6 +69,7 @@ const IndexPage = () => {
       {animationComplete === false ? <IntroOverlay /> : ''}
       <Layout>
         <SEO description="Outdoor Factory Mx" title="Inicio" />
+
         <Banner />
         <Cases />
         <HomeCarousel />

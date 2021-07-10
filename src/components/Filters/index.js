@@ -8,7 +8,6 @@ export function Filters() {
 
   return (
     <FiltersWrapper>
-      <strong>Distribuidores</strong>
       {collections.map(collection => (
         <CategoryFilterItem
           title={collection.title}

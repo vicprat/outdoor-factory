@@ -19,6 +19,12 @@ const carouselsInfo = [
     path: '/products/lacandona-1',
     description: 'La candona hombre',
   },
+  {
+    id: 4,
+    img: 4,
+    path: '/products/lacandona-1',
+    description: 'Rompevientos Nepal Hombre',
+  },
 ];
 
 const responsive = {

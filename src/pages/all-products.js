@@ -1,15 +1,31 @@
 import React from 'react';
-import { Layout, Filters, ProductsGrid, SEO } from 'components';
+import { Layout, Filters, ProductsGrid, SEO, HomeCarousel } from 'components';
 import ProductContext from 'context/ProductContext';
 import styled from 'styled-components';
 import queryString from 'query-string';
 import { useLocation } from '@reach/router';
 
+import ProgressiveImage from 'react-progressive-image';
+import { motion } from 'framer-motion';
+
 const Content = styled.div`
   display: block;
   grid-gap: 20px;
   margin-top: 20px;
+  .img-container {
+    padding: 10% 0 0 0;
+    @media (min-width: 768px) {
+      padding: 3% 0;
+    }
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
+
+const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 export default function AllProducts() {
   const { products, collections } = React.useContext(ProductContext);
@@ -61,13 +77,31 @@ export default function AllProducts() {
   return (
     <Layout>
       <SEO description="Todos los productos" title="Todos los productos" />
-      {!!searchTerm && !!filteredProducts.length && (
-        <h3>
-          Search term: <strong>'{searchTerm}'</strong>
-        </h3>
-      )}
-      {!!filteredProducts.length && <h4>{filteredProducts.length} products</h4>}
+
       <Content>
+        <div className="img-container">
+          <ProgressiveImage
+            src={require(`../images/colaboradores/all-products.png`)}
+          >
+            {src => (
+              <motion.img
+                src={src}
+                alt="elevate"
+                whileHover={{ scale: 1.005 }}
+                transition={transition}
+              />
+            )}
+          </ProgressiveImage>
+        </div>
+        <HomeCarousel />
+        {!!searchTerm && !!filteredProducts.length && (
+          <h3>
+            Search term: <strong>'{searchTerm}'</strong>
+          </h3>
+        )}
+        {!!filteredProducts.length && (
+          <h4>{filteredProducts.length} Productos</h4>
+        )}
         <Filters />
         {!filteredProducts.length && (
           <div>

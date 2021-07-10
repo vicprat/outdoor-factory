@@ -4,7 +4,7 @@ let tl = gsap.timeline();
 
 export const openMenu = () => {
   tl.to('nav', 0, {
-    css: { display: 'block', position: 'fixed' },
+    css: { display: 'block', position: 'fixed', top: '7%', zIndex: 105 },
   })
     .to('body', -0.5, { css: { overflow: 'hidden' } })
     .to('nav', 1, {
