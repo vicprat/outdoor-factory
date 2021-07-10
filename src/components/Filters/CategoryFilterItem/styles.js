@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const CategoryFilterItemWrapper = styled.div`
-         display: flex;
-         margin: 10px;
-         cursor: pointer;
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
 
-         > div:last-child {
-           padding-left: 8px;
-         }
-       `;
+  > div:last-child {
+    padding-left: 8px;
+  }
+`;
