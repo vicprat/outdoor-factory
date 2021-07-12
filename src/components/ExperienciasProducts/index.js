@@ -11,7 +11,7 @@ export function ExperienciasProducts() {
 
   return (
     <section>
-      <h1>Registro Elevarte 2021</h1>
+      <h4>Registro Elevarte 2021</h4>
       <ProductsGrid products={featuredCollection.products} />
     </section>
   );

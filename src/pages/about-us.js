@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, SEO, AboutSection } from 'components';
+import { Layout, SEO, AboutSection, Galery } from 'components';
 
 const IndexPage = () => {
   return (
@@ -7,6 +7,7 @@ const IndexPage = () => {
       <Layout>
         <SEO description="Outdoor Factory Mx" title="Nosotros" />
         <AboutSection />
+        <Galery />
       </Layout>
     </>
   );

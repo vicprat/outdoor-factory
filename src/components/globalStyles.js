@@ -30,7 +30,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 2em;
   }
   h4{
+    text-align: center;
+    letter-spacing: .5rem;
     font-size: 1.5em;
+    font-weight: bold;
   }
   h5{
     font-size: 1em;

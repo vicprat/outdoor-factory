@@ -7,6 +7,11 @@ export function Navigation() {
   return (
     <NavigationContainer>
       <div className="nav-container">
+        <div className="title">
+          <p>
+            Envios gratis a toda la república en compra miníma de $1000.00 mxn
+          </p>
+        </div>
         <div className="nav-columns">
           <div className="nav-column">
             <div className="nav-label">Menu</div>

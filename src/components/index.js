@@ -35,3 +35,4 @@ export * from './PuntosVenta';
 export * from './HomeCarousel';
 export * from './Elevarte';
 export * from './ExperienciasProducts';
+export * from './Galery';
