@@ -13,7 +13,7 @@ export function Footer() {
 
           <div className="col-md-3 col-12" id="p1">
             <Title>Nosotros</Title>
-            <h6>Vívelo en la montaña</h6>
+            <h6>Víve la experiecia Outdoor</h6>
             <p>Outdoor Factory </p>
           </div>
 

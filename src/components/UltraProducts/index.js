@@ -11,7 +11,7 @@ export function UltraProducts() {
 
   return (
     <section>
-      <h1>Todos los Productos</h1>
+      <h4>Todos los Productos</h4>
       <ProductsGrid products={featuredCollection.products} />
     </section>
   );
