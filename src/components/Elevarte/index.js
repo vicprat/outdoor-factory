@@ -1,12 +1,10 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import { Link } from 'gatsby';
 import 'react-multi-carousel/lib/styles.css';
 import ProgressiveImage from 'react-progressive-image';
 import { motion } from 'framer-motion';
 
 import { MainWrapper } from './styles';
-import { Banner } from '../../images/elevarte/elevarte1.png';
 
 const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const carouselsInfo = [
