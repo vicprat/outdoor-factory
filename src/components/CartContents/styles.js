@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CartFooter = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 5fr 1fr 40px;
   > div {
     padding: 8px;

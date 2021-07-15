@@ -87,9 +87,6 @@ export function CollabsGrid() {
                   className="information"
                 >
                   <div className="title">{brandInfo.name}</div>
-                  <div className="location">
-                    <span>{brandInfo.location}</span>
-                  </div>
                 </motion.div>
               </div>
             </div>

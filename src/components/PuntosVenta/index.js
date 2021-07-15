@@ -80,13 +80,14 @@ export function PuntosVentas() {
           <div className="description-container">
             <div className="title">{puntoVenta.name}</div>
             <div className="description">{puntoVenta.description}</div>
-            <div className="location">
-              <Link to={puntoVenta.googlemaps}>
-                <p>{puntoVenta.location}</p>
-              </Link>
-            </div>
+
             <div className="contact">
-              <h4>¡Contactanos!</h4>
+              <h4>Contacto</h4>
+              <div className="location">
+                <Link to={puntoVenta.googlemaps}>
+                  <p>{puntoVenta.location}</p>
+                </Link>
+              </div>
               <Link to={puntoVenta.instagram}>
                 <li>Instagram</li>
               </Link>

@@ -20,7 +20,7 @@ const caseStudies = [
   {
     id: 3,
     subtitle: 'Experiencias Outdoor',
-    title: 'Atrevete a la aventura',
+    title: 'Atrévete a la aventura',
     img: 'experiencias',
     path: 'experiencias',
   },

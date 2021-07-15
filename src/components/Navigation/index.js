@@ -9,12 +9,12 @@ export function Navigation() {
       <div className="nav-container">
         <div className="title">
           <p>
-            Envios gratis a toda la república en compra miníma de $1000.00 mxn
+            Envios gratis a toda la república en compra mínima de $1000.00 mxn
           </p>
         </div>
         <div className="nav-columns">
           <div className="nav-column">
-            <div className="nav-label">Menu</div>
+            <div className="nav-label">Menú</div>
             <ul className="nav-links">
               <li>
                 <Search />
@@ -48,12 +48,12 @@ export function Navigation() {
                 <p className="nav-info-label">E-mail</p>
                 <li>
                   <Link to="/contact" exact>
-                    ¡Escribenos!
+                    ¡Escríbenos!
                   </Link>
                 </li>
               </ul>
               <ul className="nav-info">
-                <p className="nav-info-label">¡Siguenos!</p>
+                <p className="nav-info-label">¡Síguenos!</p>
                 <li>
                   <Link to="https://www.instagram.com/outdoor_factory_of/?hl=es-la">
                     Instagram

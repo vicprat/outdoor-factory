@@ -10,7 +10,6 @@ export const HeaderWrapper = styled.div`
   
 
   .row {
-    padding: 0 40px;
     align-items: center;
   justify-content: center;
   
@@ -41,7 +40,7 @@ export const HeaderWrapper = styled.div`
     justify-content: center;
     align-items: center;
     width: 20px;
-      margin-right: 16px;
+      margin-right: 20px;
     @media (min-width: 768px){
       margin-right: 24px;
     }

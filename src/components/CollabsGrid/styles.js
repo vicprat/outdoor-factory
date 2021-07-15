@@ -31,11 +31,10 @@ export const MainWrapper = styled.main`
           }
         }
         .information {
+          text-align: center;
           position: absolute;
           width: 100%;
-          display: grid;
-          align-items: center;
-          justify-content: center;
+
           margin-top: 0;
           text-transform: uppercase;
           .title {

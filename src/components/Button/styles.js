@@ -4,7 +4,7 @@ const fullWidthStyles = ({ fullWidth }) => {
   if (fullWidth) {
     return css`
       display: block;
-      width: 100%;
+      width: 50%;
     `;
   }
 };
@@ -22,14 +22,14 @@ export const Button = styled.button`
   text-transform: uppercase;
   background: white;
   color: black;
-  border: 1px solid black;
+  border: none;
   white-space: nowrap;
+  transition: 0.5s ease-in-out;
   ${fullWidthStyles}
 
   &:hover:not(:disabled) {
     color: white;
-    background: black;
-    border: 1px solid rgba(0, 0, 0, 0);
+    background: #464646;
   }
 
   &:disabled {

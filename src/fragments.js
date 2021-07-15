@@ -9,7 +9,7 @@ export const productFields = graphql`
       id
       localFile {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 2500) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

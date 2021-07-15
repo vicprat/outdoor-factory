@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const MainWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 100px;
+  justify-content: center;
+  overflow: hidden;
   .container {
     display: grid;
-    padding: 20px;
+    width: 100%;
     grid-template-columns: 1fr;
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
@@ -19,23 +21,25 @@ export const MainWrapper = styled.div`
       }
     }
     .description-container {
-      padding: 20px;
       margin: auto;
       text-align: center;
       .title {
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: 700;
         letter-spacing: 0.3rem;
+        padding: 5%;
       }
       .description {
-        margin: 20px 0;
+        padding: 5%;
         font-size: 1rem;
+        line-height: 1.5rem;
 
         @media (min-width: 768px) {
           font-size: 1.3rem;
         }
       }
       .location {
+        padding: 5%;
         font-weight: lighter;
         font-size: 0.75rem;
         p {
@@ -48,7 +52,7 @@ export const MainWrapper = styled.div`
       .contact {
         li {
           cursor: pointer;
-          margin: 10px 0;
+          padding: 5%;
           color: black;
           list-style: none;
           text-decoration: none;

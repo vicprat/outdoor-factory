@@ -4,19 +4,21 @@ export const Grid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  margin-top: 20px;
+  top: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
   h1 {
-    font-size: 2rem;
+    padding: 10% 5%;
+    font-size: 1.7rem;
     letter-spacing: 0.5rem;
     font-weight: bold;
     color: #575555;
   }
   p {
+    font-size: 1rem;
     line-height: 2rem;
-    padding: auto;
+    padding: 5%;
     font-weight: lighter;
   }
   @media (min-width: 768px) {
