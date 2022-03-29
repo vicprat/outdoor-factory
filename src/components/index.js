@@ -20,7 +20,6 @@ export * from './HomeParallax';
 export * from './Footer';
 export * from './ContactForm';
 export * from './AtmanProducts';
-export * from './KontikiProducts';
 export * from './MonkeyProducts';
 export * from './SelvaProducts';
 export * from './UltraProducts';
